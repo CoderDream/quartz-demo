@@ -23,6 +23,20 @@ com.coderdream.quartz.HelloScheduler
 
 
 
+## 2-2 浅谈Job&JobDetail (09:03) ##
 
+	System.out.println("jobDetail's name:" + jobDetail.getKey().getName());
+	System.out.println("jobDetail's group:" + jobDetail.getKey().getGroup());
+	System.out.println("jobDetail's jobClass:" + jobDetail.getJobClass().getName());
 
+运行结果：
+
+	jobDetail's name:myJob
+	jobDetail's group:group1
+	jobDetail's jobClass:com.coderdream.quartz.HelloJob
+	Current excut is:2017-06-25 21:40:55
+	Current excut is:2017-06-25 21:40:55
+	Hello World!
+	Current excut is:2017-06-25 21:40:56
+	Hello World!
 

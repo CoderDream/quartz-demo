@@ -199,3 +199,23 @@ com.coderdream.quartz.HelloJob
 	Start Time is:2017-06-26 09:28:15
 	End Time is:2017-06-26 09:28:18
 	JobKey info--jobName:myJob jobGroup: DEFAULT
+
+
+## 2-6 SimpleTrigger (13:08) ##
+
+设置SimpleTrigger的开始时间后，执行且只执行一次任务
+
+	// 获取距离当前时间4秒钟之后，执行且只执行一次任务
+	date.setTime(date.getTime() + 4000);
+
+	// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次，直到永远
+	SimpleTrigger trigger = (SimpleTrigger) TriggerBuilder.newTrigger()
+			.withIdentity("myTrigger", "group1").startAt(date).build();
+
+执行结果：
+
+	Current excut is:2017-06-26 10:12:10
+	Current excut is:2017-06-26 10:12:14
+	Hello World!
+
+

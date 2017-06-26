@@ -163,4 +163,39 @@ com.coderdream.quartz.HelloJob
 	My Trigger name and group are:myTrigger:group1
 	message is:hello myTrigger1
 	floatJobValue is:3.14
-	doubleTriggerValue is:2.0
+	doubleTriggerValue is:2
+
+
+## 2-5 浅谈Trigger (10:22) ##
+
+设置startAt()和endAt()
+
+	// 打印当前的执行时间，格式为2017-01-01 00:00:00
+	Date date = new Date();
+	SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	System.out.println("Current excut is:" + sf.format(date));
+
+	// 获取距离当前时间3秒后的时间
+	date.setTime(date.getTime() + 3000);
+
+	// 获取距离当前时间6秒后的时间
+	Date endDate = new Date();
+	endDate.setTime(endDate.getTime() + 6000);
+
+	// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次，直到永远
+	Trigger trigger = TriggerBuilder.newTrigger().withIdentity("myTrigger", "group1").startAt(date).endAt(endDate)
+			.withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(2).repeatForever()).build();
+
+
+执行结果：
+
+
+	Current excut is:2017-06-26 09:28:12
+	Current excut is:2017-06-26 09:28:15
+	Start Time is:2017-06-26 09:28:15
+	End Time is:2017-06-26 09:28:18
+	JobKey info--jobName:myJob jobGroup: DEFAULT
+	Current excut is:2017-06-26 09:28:17
+	Start Time is:2017-06-26 09:28:15
+	End Time is:2017-06-26 09:28:18
+	JobKey info--jobName:myJob jobGroup: DEFAULT

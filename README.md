@@ -303,3 +303,55 @@ com.coderdream.quartz.HelloJob
 Cron表达式生成器
 
 [http://www.pdtools.net/tools/becron.jsp](http://www.pdtools.net/tools/becron.jsp)
+
+
+## 2-8 浅谈Scheduler (15:02) ##
+
+Date scheduleJob(JobDetail jobDetail, Trigger trigger)
+
+	Date executeDate = scheduler.scheduleJob(jobDetail, trigger);
+	System.out.println("scheduled time is: " + sf.format(executeDate));
+
+执行结果：
+
+	Current execute is:2017-06-26 11:26:01
+	scheduled time is: 2017-06-26 11:26:05
+	Current execute is:2017-06-26 11:26:05
+	Hello World!
+	Current execute is:2017-06-26 11:26:10
+	Hello World!
+
+
+
+频率设定为每秒执行一次
+
+	// scheduler执行后2秒后挂起
+	Thread.sleep(2000L);
+	scheduler.standby();
+
+	// scheduler执行后3秒后重新启动执行
+	Thread.sleep(3000L);
+	scheduler.start();
+
+执行结果（27秒开始执行，执行2秒后，29秒开始挂起，然后休眠3秒到32，然后32秒后开始执行，而且是一次性执行3次：
+
+	Current execute is:2017-06-26 11:32:27
+	scheduled time is: 2017-06-26 11:32:27
+	Current execute is:2017-06-26 11:32:27
+	Hello World!
+	Current execute is:2017-06-26 11:32:28
+	Hello World!
+	Current execute is:2017-06-26 11:32:29
+	Hello World!
+	Current execute is:2017-06-26 11:32:32
+	Hello World!
+	Current execute is:2017-06-26 11:32:32
+	Hello World!
+	Current execute is:2017-06-26 11:32:32
+	Hello World!
+	Current execute is:2017-06-26 11:32:33
+	Hello World!
+	Current execute is:2017-06-26 11:32:34
+	Hello World!
+	Current execute is:2017-06-26 11:32:35
+	Hello World!

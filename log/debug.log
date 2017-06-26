@@ -988,4 +988,204 @@ Caused by: java.lang.ClassCastException: Identified object is not a Double.
  2017-06-26 11:15:30,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
  2017-06-26 11:15:30,001 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
  2017-06-26 11:15:30,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:25:35,700 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:25:35,704 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:25:35,714 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:25:35,714 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:25:35,716 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:25:35,717 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:25:35,717 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:25:35,717 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:25:35,717 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:25:35,717 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:25:35,720 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:25:35,723 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:25:35,724 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:25:35,725 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:26:01,503 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:26:01,507 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:26:01,517 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:26:01,517 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:26:01,520 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:26:01,521 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:26:01,521 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:26:01,521 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:26:01,522 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:26:01,524 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:26:01,526 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:26:05,004 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:26:05,008 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:26:05,009 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:26:10,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:26:10,002 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:26:10,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:29:18,474 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:29:18,477 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:29:18,487 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:29:18,487 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:29:18,490 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:29:18,490 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:29:18,491 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:29:18,491 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:29:18,491 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:29:18,491 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:29:18,494 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:29:20,009 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:29:20,014 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:29:20,014 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:29:20,493 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:30:18,210 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:30:18,213 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:30:18,223 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:30:18,223 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:30:18,225 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:30:18,226 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:30:18,226 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:30:18,226 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:30:18,226 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:30:18,227 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:30:18,229 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:30:18,231 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:30:18,234 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:30:18,235 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:30:19,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:30:19,002 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:30:19,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:30:20,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:30:20,001 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:30:20,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:30:20,229 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:32:27,646 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:32:27,650 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:32:27,660 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:32:27,660 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:32:27,663 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:32:27,663 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:32:27,663 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:32:27,664 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:32:27,664 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:32:27,664 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:32:27,667 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:27,669 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:27,671 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:27,671 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:28,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:28,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:28,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:29,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:29,001 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:29,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:29,666 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:32:32,666 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:32:32,666 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:32,667 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:32,667 DEBUG [DefaultQuartzScheduler_Worker-4]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:32,667 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:32,668 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:32,669 DEBUG [DefaultQuartzScheduler_Worker-5]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:32,669 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:32,670 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:32,670 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:32,670 DEBUG [DefaultQuartzScheduler_Worker-6]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:33,000 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:33,001 DEBUG [DefaultQuartzScheduler_Worker-7]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:33,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:34,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:34,002 DEBUG [DefaultQuartzScheduler_Worker-8]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:32:34,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:35,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:32:35,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:32:35,003 DEBUG [DefaultQuartzScheduler_Worker-9]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:35:58,868 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:35:58,871 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:35:58,882 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:35:58,882 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:35:58,884 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:35:58,885 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:35:58,885 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:35:58,885 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:35:58,885 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:35:58,885 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:35:58,888 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:35:58,891 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:35:58,892 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:35:58,893 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:35:59,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:35:59,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:35:59,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:00,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:00,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:00,002 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:00,887 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:36:05,888 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:36:05,888 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:05,889 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:05,889 DEBUG [DefaultQuartzScheduler_Worker-4]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:05,889 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:05,890 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:05,890 DEBUG [DefaultQuartzScheduler_Worker-5]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:05,891 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:05,891 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:05,892 DEBUG [DefaultQuartzScheduler_Worker-6]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:05,892 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:05,893 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:05,893 DEBUG [DefaultQuartzScheduler_Worker-7]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:05,893 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:05,894 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:05,894 DEBUG [DefaultQuartzScheduler_Worker-8]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:05,894 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:06,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:06,001 DEBUG [DefaultQuartzScheduler_Worker-9]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:06,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:07,000 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:07,001 DEBUG [DefaultQuartzScheduler_Worker-10]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:07,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:08,000 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:08,000 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:08,000 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:36:09,000 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:36:09,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:36:09,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
  

@@ -15,7 +15,8 @@ import org.quartz.impl.StdSchedulerFactory;
 
 public class HelloScheduler {
 
-	public static void main(String[] args) throws SchedulerException {
+	public static void main(String[] args)
+			throws SchedulerException, InterruptedException {
 		// 创建一个JobDetail实例，将该实例与HelloJob Class绑定
 		JobDetail jobDetail = JobBuilder.newJob(HelloJob.class)
 				.withIdentity("myJob").build();
@@ -25,22 +26,16 @@ public class HelloScheduler {
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("Current execute is:" + sf.format(date));
 
-		// String cronString0 = "* * * * * ?";
+		// 0.每秒执行一次
+		String cronString0 = "* * * * * ?";
 
 		// String cronString1 = "0 55 10 ? * * 2017";
-
-		String cronString2 = "0/5 * 11,18 * * ?";
-		// 1.2017年内每天10点55分触发一次
-		// 0 55 10 ? * * 2017
 		// 2.每天的11点整至11点59分55秒，以及18点整至18点59分55秒，每5秒钟触发一次
-		// 0/5 * 11,18 * * ?
-		// 3.每月周一只周五的10点15分触发一次
-		// 4.每月最后一天的10点15分触发一次
-		// 5.每月第三个周五10点15分触发一次
+		// String cronString2 = "0/5 * 11,18 * * ?";
 		// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次
 		CronTrigger trigger = (CronTrigger) TriggerBuilder.newTrigger()
 				.withIdentity("myTrigger", "group1")
-				.withSchedule(CronScheduleBuilder.cronSchedule(cronString2))
+				.withSchedule(CronScheduleBuilder.cronSchedule(cronString0))
 				.build();
 
 		// 创建Scheduler实例
@@ -48,6 +43,15 @@ public class HelloScheduler {
 		Scheduler scheduler = schedulerFactory.getScheduler();
 		scheduler.start();
 
-		scheduler.scheduleJob(jobDetail, trigger);
+		Date executeDate = scheduler.scheduleJob(jobDetail, trigger);
+		System.out.println("scheduled time is: " + sf.format(executeDate));
+
+		// scheduler执行后2秒后挂起
+		Thread.sleep(2000L);
+		scheduler.standby();
+
+		// scheduler执行后3秒后重新启动执行
+		Thread.sleep(3000L);
+		scheduler.start();
 	}
 }

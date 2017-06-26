@@ -48,10 +48,14 @@ public class HelloScheduler {
 
 		// scheduler执行后2秒后挂起
 		Thread.sleep(2000L);
-		scheduler.standby();
+		// scheduler.standby();
+		// shutdown(true)表示等待所有正在执行的job执行完毕之后，再关闭scheduler
+		// shutdown(false)表示立即关闭scheduler
+		scheduler.shutdown(false);
+		System.out.println("scheduler is shut down? " + scheduler.isShutdown());
 
 		// scheduler执行后3秒后重新启动执行
-		Thread.sleep(3000L);
-		scheduler.start();
+		// Thread.sleep(3000L);
+		// scheduler.start();
 	}
 }

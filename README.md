@@ -321,7 +321,7 @@ Date scheduleJob(JobDetail jobDetail, Trigger trigger)
 	Current execute is:2017-06-26 11:26:10
 	Hello World!
 
-
+示例1：standby后再start
 
 频率设定为每秒执行一次
 
@@ -333,7 +333,7 @@ Date scheduleJob(JobDetail jobDetail, Trigger trigger)
 	Thread.sleep(3000L);
 	scheduler.start();
 
-执行结果（27秒开始执行，执行2秒后，29秒开始挂起，然后休眠3秒到32，然后32秒后开始执行，而且是一次性执行3次：
+执行结果（27秒开始执行，执行2秒后，29秒开始挂起，然后休眠3秒到32，然后32秒后开始执行，而且是一次性执行3次）：
 
 	Current execute is:2017-06-26 11:32:27
 	scheduled time is: 2017-06-26 11:32:27
@@ -354,4 +354,56 @@ Date scheduleJob(JobDetail jobDetail, Trigger trigger)
 	Current execute is:2017-06-26 11:32:34
 	Hello World!
 	Current execute is:2017-06-26 11:32:35
+	Hello World!
+
+示例2：shutdown后再start
+
+	// scheduler执行后2秒后挂起
+	Thread.sleep(2000L);
+	//scheduler.standby();
+	scheduler.shutdown();
+	// shutdown(true)表示等待所有正在执行的job执行完毕之后，再关闭scheduler
+	// shutdown(false)表示立即关闭scheduler
+
+	// scheduler执行后3秒后重新启动执行
+	Thread.sleep(3000L);
+	scheduler.start();
+
+执行结果（43秒开始执行，执行2秒后，45秒开始关闭，然后再重新启动会报错）：
+
+	Current execute is:2017-06-26 11:40:43
+	scheduled time is: 2017-06-26 11:40:43
+	Current execute is:2017-06-26 11:40:43
+	Hello World!
+	Current execute is:2017-06-26 11:40:44
+	Hello World!
+	Current execute is:2017-06-26 11:40:45
+	Hello World!
+	Exception in thread "main" org.quartz.SchedulerException: The Scheduler cannot be restarted after shutdown() has been called.
+		at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:529)
+		at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+		at com.coderdream.quartz.HelloScheduler.main(HelloScheduler.java:58)
+
+shutdown(true) 表示等待所有正在执行的job执行完毕之后，再关闭scheduler
+
+	Current execute is:2017-06-26 11:46:21
+	scheduled time is: 2017-06-26 11:46:21
+	Current execute is:2017-06-26 11:46:26
+	Hello World!
+	Current execute is:2017-06-26 11:46:27
+	Hello World!
+	Current execute is:2017-06-26 11:46:28
+	Hello World!
+	scheduler is shut down? true
+
+shutdown(false) 表示立即关闭scheduler
+
+	Current execute is:2017-06-26 11:48:12
+	scheduled time is: 2017-06-26 11:48:12
+	scheduler is shut down? true
+	Current execute is:2017-06-26 11:48:17
+	Hello World!
+	Current execute is:2017-06-26 11:48:18
+	Hello World!
+	Current execute is:2017-06-26 11:48:19
 	Hello World!

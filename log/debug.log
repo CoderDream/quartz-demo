@@ -1188,4 +1188,135 @@ Caused by: java.lang.ClassCastException: Identified object is not a Double.
  2017-06-26 11:36:09,000 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
  2017-06-26 11:36:09,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
  2017-06-26 11:36:09,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:40:43,408 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:40:43,414 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:40:43,424 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:40:43,425 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:40:43,427 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:40:43,428 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:40:43,428 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:40:43,428 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:40:43,428 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:40:43,428 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:40:43,431 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:40:43,433 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:40:43,435 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:40:43,435 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:40:44,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:40:44,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:40:44,002 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:40:45,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:40:45,001 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:40:45,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:40:45,430 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ 2017-06-26 11:40:45,430 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:40:45,430 DEBUG [main]: Shutting down threadpool...
+ 2017-06-26 11:40:45,430 DEBUG [main]: Shutdown of threadpool complete.
+ 2017-06-26 11:40:45,431 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ 2017-06-26 11:40:45,436 DEBUG [DefaultQuartzScheduler_Worker-1]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,502 DEBUG [DefaultQuartzScheduler_Worker-3]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,503 DEBUG [DefaultQuartzScheduler_Worker-2]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,916 DEBUG [DefaultQuartzScheduler_Worker-4]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,916 DEBUG [DefaultQuartzScheduler_Worker-9]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,916 DEBUG [DefaultQuartzScheduler_Worker-8]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,916 DEBUG [DefaultQuartzScheduler_Worker-7]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,916 DEBUG [DefaultQuartzScheduler_Worker-5]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,917 DEBUG [DefaultQuartzScheduler_Worker-6]: WorkerThread is shut down.
+ 2017-06-26 11:40:45,917 DEBUG [DefaultQuartzScheduler_Worker-10]: WorkerThread is shut down.
+ 2017-06-26 11:46:21,371 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:46:21,375 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:46:21,386 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:46:21,386 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:46:21,389 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:46:21,389 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:46:21,390 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:46:21,390 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:46:21,390 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:46:21,390 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:46:21,393 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:46:21,395 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:46:21,397 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:46:21,398 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:46:22,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:46:22,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:46:22,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:46:23,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:46:23,001 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:46:23,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:46:23,392 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ 2017-06-26 11:46:23,392 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:46:23,393 DEBUG [main]: Shutting down threadpool...
+ 2017-06-26 11:46:23,393 DEBUG [main]: Waiting for thread DefaultQuartzScheduler_Worker-1 to shut down
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-4]: WorkerThread is shut down.
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-9]: WorkerThread is shut down.
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-8]: WorkerThread is shut down.
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-10]: WorkerThread is shut down.
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-5]: WorkerThread is shut down.
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-7]: WorkerThread is shut down.
+ 2017-06-26 11:46:23,876 DEBUG [DefaultQuartzScheduler_Worker-6]: WorkerThread is shut down.
+ 2017-06-26 11:46:25,393 DEBUG [main]: Waiting for thread DefaultQuartzScheduler_Worker-1 to shut down
+ 2017-06-26 11:46:26,399 DEBUG [DefaultQuartzScheduler_Worker-1]: WorkerThread is shut down.
+ 2017-06-26 11:46:26,399 DEBUG [main]: Waiting for thread DefaultQuartzScheduler_Worker-2 to shut down
+ 2017-06-26 11:46:27,001 DEBUG [DefaultQuartzScheduler_Worker-2]: WorkerThread is shut down.
+ 2017-06-26 11:46:27,001 DEBUG [main]: Waiting for thread DefaultQuartzScheduler_Worker-3 to shut down
+ 2017-06-26 11:46:28,001 DEBUG [DefaultQuartzScheduler_Worker-3]: WorkerThread is shut down.
+ 2017-06-26 11:46:28,001 DEBUG [main]: No executing jobs remaining, all threads stopped.
+ 2017-06-26 11:46:28,001 DEBUG [main]: Shutdown of threadpool complete.
+ 2017-06-26 11:46:28,002 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ 2017-06-26 11:48:12,816 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 11:48:12,820 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 11:48:12,830 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 11:48:12,830 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 11:48:12,832 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 11:48:12,833 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 11:48:12,833 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 11:48:12,833 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 11:48:12,833 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 11:48:12,833 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 11:48:12,836 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:48:12,838 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:48:12,840 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:48:12,841 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:48:13,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:48:13,001 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:48:13,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:48:14,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 11:48:14,001 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 11:48:14,001 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 11:48:14,835 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ 2017-06-26 11:48:14,835 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ 2017-06-26 11:48:14,835 DEBUG [main]: Shutting down threadpool...
+ 2017-06-26 11:48:14,835 DEBUG [main]: Shutdown of threadpool complete.
+ 2017-06-26 11:48:14,836 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-5]: WorkerThread is shut down.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-7]: WorkerThread is shut down.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-10]: WorkerThread is shut down.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-8]: WorkerThread is shut down.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-9]: WorkerThread is shut down.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-6]: WorkerThread is shut down.
+ 2017-06-26 11:48:15,321 DEBUG [DefaultQuartzScheduler_Worker-4]: WorkerThread is shut down.
+ 2017-06-26 11:48:17,843 DEBUG [DefaultQuartzScheduler_Worker-1]: WorkerThread is shut down.
+ 2017-06-26 11:48:18,002 DEBUG [DefaultQuartzScheduler_Worker-2]: WorkerThread is shut down.
+ 2017-06-26 11:48:19,002 DEBUG [DefaultQuartzScheduler_Worker-3]: WorkerThread is shut down.
  

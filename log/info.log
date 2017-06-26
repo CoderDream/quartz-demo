@@ -373,4 +373,20 @@ Caused by: java.lang.ClassCastException: Identified object is not a Double.
  2017-06-26 10:29:22,706 INFO  [main] [org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
  2017-06-26 10:29:22,706 INFO  [main] [org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)]: Quartz scheduler version: 2.3.0
  2017-06-26 10:29:22,706 INFO  [main] [org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 10:38:21,552 INFO  [main] [org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)]: Using default implementation for ThreadExecutor
+ 2017-06-26 10:38:21,556 INFO  [main] [org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)]: Job execution threads will use class loader of thread: main
+ 2017-06-26 10:38:21,566 INFO  [main] [org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 10:38:21,566 INFO  [main] [org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 10:38:21,569 INFO  [main] [org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155)]: RAMJobStore initialized.
+ 2017-06-26 10:38:21,570 INFO  [main] [org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 10:38:21,570 INFO  [main] [org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 10:38:21,570 INFO  [main] [org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)]: Quartz scheduler version: 2.3.0
+ 2017-06-26 10:38:21,570 INFO  [main] [org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
  

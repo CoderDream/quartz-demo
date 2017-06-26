@@ -244,3 +244,29 @@ com.coderdream.quartz.HelloJob
 	Hello World!
 	Current excut is:2017-06-26 10:29:32
 	Hello World!
+
+示例3：一旦被指定了endTime参数，那么它会覆盖重复次数参数的效果
+
+	// 获取距离当前时间4秒钟之后首次执行任务，之后每隔两秒钟重复执行一次任务，执行3次
+	date.setTime(date.getTime() + 4000);
+
+	// 获取距离当前时间6秒后的时间
+	Date endDate = new Date();
+	endDate.setTime(endDate.getTime() + 6000);
+
+	// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次
+	// SimpleTrigger.REPEAT_INDEFINITELY 无数次 直到永远
+	SimpleTrigger trigger = (SimpleTrigger) TriggerBuilder.newTrigger()
+			.withIdentity("myTrigger", "group1").startAt(date)
+			.endAt(endDate)
+			.withSchedule(SimpleScheduleBuilder.simpleSchedule()
+					.withIntervalInSeconds(2).withRepeatCount(3))
+			.build();
+
+执行结果：
+
+	Current execute is:2017-06-26 10:38:21
+	Current execute is:2017-06-26 10:38:25
+	Hello World!
+	Current execute is:2017-06-26 10:38:27
+	Hello World!

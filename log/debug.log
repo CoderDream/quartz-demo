@@ -643,4 +643,54 @@ Caused by: java.lang.ClassCastException: Identified object is not a Double.
  2017-06-26 10:31:29,799 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
  2017-06-26 10:31:54,930 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
  2017-06-26 10:32:20,845 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:32:44,459 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:33:13,898 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:33:38,228 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:34:03,513 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:34:32,632 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:34:57,776 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:35:21,432 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:35:49,324 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:36:17,901 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:36:47,482 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:37:14,598 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:37:43,791 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:38:11,575 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:38:21,552 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 10:38:21,556 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 10:38:21,566 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 10:38:21,566 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 10:38:21,569 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 10:38:21,570 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 10:38:21,570 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 10:38:21,570 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 10:38:21,570 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 10:38:21,571 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:38:21,572 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 10:38:25,419 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 10:38:25,423 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 10:38:25,424 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 10:38:27,416 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'DEFAULT.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 10:38:27,416 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:38:27,416 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job DEFAULT.myJob
+ 2017-06-26 10:38:39,013 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:38:52,104 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:39:02,091 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:39:21,650 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:39:29,428 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:39:50,127 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:39:53,720 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:40:17,915 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:40:22,923 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:40:41,901 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:40:52,148 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:41:07,122 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 10:41:16,807 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
  

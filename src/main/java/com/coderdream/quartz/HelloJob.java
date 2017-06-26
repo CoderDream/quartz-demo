@@ -4,13 +4,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.quartz.Job;
-import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.quartz.JobKey;
 import org.quartz.TriggerKey;
 
 public class HelloJob implements Job {
+
+	private String message;
+	private Float floatJobValue;
+	private Double doubleTriggerValue;
 
 	@Override
 	public void execute(JobExecutionContext context) throws JobExecutionException {
@@ -23,16 +26,34 @@ public class HelloJob implements Job {
 		System.out.println("My Job name and group are:" + key.getName() + ":" + key.getGroup());
 		TriggerKey triggerKey = context.getTrigger().getKey();
 		System.out.println("My Trigger name and group are:" + triggerKey.getName() + ":" + triggerKey.getGroup());
-		JobDataMap jobDataMap = context.getJobDetail().getJobDataMap();
-		JobDataMap triggerDataMap = context.getTrigger().getJobDataMap();
-		String jobMsg = jobDataMap.getString("message");
-		Float jobFloatValue = jobDataMap.getFloat("FloatJobValue");
-		String triggerMsg = triggerDataMap.getString("message");
-		Double triggerDoubleValue = triggerDataMap.getDouble("DoubleTriggerValue");
-		System.out.println("JobMsg is:" + jobMsg);
-		System.out.println("JobFloatValue is:" + jobFloatValue);
-		System.out.println("TriggerMsg is:" + triggerMsg);
-		System.out.println("TriggerDoubleValue is:" + triggerDoubleValue);
+		System.out.println("message is:" + message);
+		System.out.println("floatJobValue is:" + floatJobValue);
+		System.out.println("doubleTriggerValue is:" + doubleTriggerValue);
+
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Float getFloatJobValue() {
+		return floatJobValue;
+	}
+
+	public void setFloatJobValue(Float floatJobValue) {
+		this.floatJobValue = floatJobValue;
+	}
+
+	public Double getDoubleTriggerValue() {
+		return doubleTriggerValue;
+	}
+
+	public void setDoubleTriggerValue(Double doubleTriggerValue) {
+		this.doubleTriggerValue = doubleTriggerValue;
 	}
 
 }

@@ -58,3 +58,109 @@ com.coderdream.quartz.HelloScheduler
 	TriggerMsg is:hello myTrigger1
 	TriggerDoubleValue is:2.0
 
+## 2-4 浅谈JobExecutionContext&JobDataMap(下) ##
+
+使用getMergedJobDataMap，如果key值相同，会优先取trigger里面的值。
+
+	@Override
+	public void execute(JobExecutionContext context) throws JobExecutionException {
+		// 打印当前的执行时间，格式为2017-01-01 00:00:00
+		Date date = new Date();
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		System.out.println("Current excut is:" + sf.format(date));
+		// 编写具体的业务逻辑
+		JobKey key = context.getJobDetail().getKey();
+		System.out.println("My Job name and group are:" + key.getName() + ":" + key.getGroup());
+		TriggerKey triggerKey = context.getTrigger().getKey();
+		System.out.println("My Trigger name and group are:" + triggerKey.getName() + ":" + triggerKey.getGroup());
+		JobDataMap jobDataMap = context.getMergedJobDataMap();
+		String jobMsg = jobDataMap.getString("message");
+		Float jobFloatValue = jobDataMap.getFloat("jobFloatValue");
+		Double triggerDoubleValue = jobDataMap.getDouble("triggerDoubleValue");
+		System.out.println("JobMsg is:" + jobMsg);
+		System.out.println("JobFloatValue is:" + jobFloatValue);
+		System.out.println("TriggerDoubleValue is:" + triggerDoubleValue);
+	}
+
+
+执行结果：
+
+	Current excut is:2017-06-26 09:04:43
+	Current excut is:2017-06-26 09:04:43
+	My Job name and group are:myJob:group1
+	My Trigger name and group are:myTrigger:group1
+	JobMsg is:hello myTrigger1
+	JobFloatValue is:3.14
+	TriggerDoubleValue is:2.0
+	Current excut is:2017-06-26 09:04:45
+	My Job name and group are:myJob:group1
+	My Trigger name and group are:myTrigger:group1
+	JobMsg is:hello myTrigger1
+	JobFloatValue is:3.14
+	TriggerDoubleValue is:2.0
+
+使用成员变量的get、set方法：
+
+com.coderdream.quartz.HelloJob
+
+	private String message;
+	private Float floatJobValue;
+	private Double doubleTriggerValue;
+
+	@Override
+	public void execute(JobExecutionContext context) throws JobExecutionException {
+		// 打印当前的执行时间，格式为2017-01-01 00:00:00
+		Date date = new Date();
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		System.out.println("Current excut is:" + sf.format(date));
+		// 编写具体的业务逻辑
+		JobKey key = context.getJobDetail().getKey();
+		System.out.println("My Job name and group are:" + key.getName() + ":" + key.getGroup());
+		TriggerKey triggerKey = context.getTrigger().getKey();
+		System.out.println("My Trigger name and group are:" + triggerKey.getName() + ":" + triggerKey.getGroup());
+		System.out.println("message is:" + message);
+		System.out.println("floatJobValue is:" + floatJobValue);
+		System.out.println("doubleTriggerValue is:" + doubleTriggerValue);
+
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Float getFloatJobValue() {
+		return floatJobValue;
+	}
+
+	public void setFloatJobValue(Float floatJobValue) {
+		this.floatJobValue = floatJobValue;
+	}
+
+	public Double getDoubleTriggerValue() {
+		return doubleTriggerValue;
+	}
+
+	public void setDoubleTriggerValue(Double doubleTriggerValue) {
+		this.doubleTriggerValue = doubleTriggerValue;
+	}
+
+
+执行结果：
+
+	Current excut is:2017-06-26 09:12:22
+	Current excut is:2017-06-26 09:12:22
+	My Job name and group are:myJob:group1
+	My Trigger name and group are:myTrigger:group1
+	message is:hello myTrigger1
+	floatJobValue is:3.14
+	doubleTriggerValue is:2.0
+	Current excut is:2017-06-26 09:12:23
+	My Job name and group are:myJob:group1
+	My Trigger name and group are:myTrigger:group1
+	message is:hello myTrigger1
+	floatJobValue is:3.14
+	doubleTriggerValue is:2.0

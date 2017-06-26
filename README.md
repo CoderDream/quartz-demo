@@ -187,7 +187,7 @@ com.coderdream.quartz.HelloJob
 			.withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(2).repeatForever()).build();
 
 
-执行结果：
+执行结果（由于开始时间与结束时间只间隔3秒，所以执行两次后，Job停止执行）：
 
 
 	Current excut is:2017-06-26 09:28:12

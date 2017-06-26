@@ -270,3 +270,36 @@ com.coderdream.quartz.HelloJob
 	Hello World!
 	Current execute is:2017-06-26 10:38:27
 	Hello World!
+
+## 2-7 CronTrigger (24:09) ##
+
+示例1：
+
+	// 1.2017年内每天10点55分触发一次
+	// 0 55 10 ? * * 2017
+
+执行结果：
+
+	Current execute is:2017-06-26 10:54:53
+	Current execute is:2017-06-26 10:55:00
+	Hello World!
+
+
+示例2：
+
+	// 2.每天的11点整至11点59分55秒，以及18点整至18点59分55秒，每5秒钟触发一次
+	// 0/5 * 11,18 * * ?
+
+执行结果：
+
+	Current execute is:2017-06-26 11:15:17
+	Current execute is:2017-06-26 11:15:20
+	Hello World!
+	Current execute is:2017-06-26 11:15:25
+	Hello World!
+	Current execute is:2017-06-26 11:15:30
+	Hello World!
+
+Cron表达式生成器
+
+[http://www.pdtools.net/tools/becron.jsp](http://www.pdtools.net/tools/becron.jsp)

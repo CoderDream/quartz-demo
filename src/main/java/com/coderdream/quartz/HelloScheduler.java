@@ -3,13 +3,13 @@ package com.coderdream.quartz;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.quartz.CronScheduleBuilder;
+import org.quartz.CronTrigger;
 import org.quartz.JobBuilder;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
 import org.quartz.SchedulerFactory;
-import org.quartz.SimpleScheduleBuilder;
-import org.quartz.SimpleTrigger;
 import org.quartz.TriggerBuilder;
 import org.quartz.impl.StdSchedulerFactory;
 
@@ -25,20 +25,22 @@ public class HelloScheduler {
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("Current execute is:" + sf.format(date));
 
-		// 获取距离当前时间4秒钟之后首次执行任务，之后每隔两秒钟重复执行一次任务，执行3次
-		date.setTime(date.getTime() + 4000);
+		// String cronString0 = "* * * * * ?";
 
-		// 获取距离当前时间6秒后的时间
-		Date endDate = new Date();
-		endDate.setTime(endDate.getTime() + 6000);
+		// String cronString1 = "0 55 10 ? * * 2017";
 
+		String cronString2 = "0/5 * 11,18 * * ?";
+		// 1.2017年内每天10点55分触发一次
+		// 0 55 10 ? * * 2017
+		// 2.每天的11点整至11点59分55秒，以及18点整至18点59分55秒，每5秒钟触发一次
+		// 0/5 * 11,18 * * ?
+		// 3.每月周一只周五的10点15分触发一次
+		// 4.每月最后一天的10点15分触发一次
+		// 5.每月第三个周五10点15分触发一次
 		// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次
-		// SimpleTrigger.REPEAT_INDEFINITELY 无数次 直到永远
-		SimpleTrigger trigger = (SimpleTrigger) TriggerBuilder.newTrigger()
-				.withIdentity("myTrigger", "group1").startAt(date)
-				.endAt(endDate)
-				.withSchedule(SimpleScheduleBuilder.simpleSchedule()
-						.withIntervalInSeconds(2).withRepeatCount(3))
+		CronTrigger trigger = (CronTrigger) TriggerBuilder.newTrigger()
+				.withIdentity("myTrigger", "group1")
+				.withSchedule(CronScheduleBuilder.cronSchedule(cronString2))
 				.build();
 
 		// 创建Scheduler实例

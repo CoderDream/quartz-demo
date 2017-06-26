@@ -14,7 +14,7 @@ public class HelloJob implements Job {
 		// 打印当前的执行时间，格式为2017-01-01 00:00:00
 		Date date = new Date();
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		System.out.println("Current excut is:" + sf.format(date));
+		System.out.println("Current execute is:" + sf.format(date));
 		// 编写具体的业务逻辑
 		System.out.println("Hello World!");
 	}

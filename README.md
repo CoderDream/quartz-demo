@@ -203,7 +203,7 @@ com.coderdream.quartz.HelloJob
 
 ## 2-6 SimpleTrigger (13:08) ##
 
-设置SimpleTrigger的开始时间后，执行且只执行一次任务
+示例1：设置SimpleTrigger的开始时间后，执行且只执行一次任务
 
 	// 获取距离当前时间4秒钟之后，执行且只执行一次任务
 	date.setTime(date.getTime() + 4000);
@@ -219,3 +219,28 @@ com.coderdream.quartz.HelloJob
 	Hello World!
 
 
+示例2：4秒钟之后首次执行任务，执行3次
+
+	// 获取距离当前时间4秒钟之后首次执行任务，之后每隔两秒钟重复执行一次任务，执行3次
+	date.setTime(date.getTime() + 4000);
+
+	// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次
+	// SimpleTrigger.REPEAT_INDEFINITELY 无数次 直到永远
+	SimpleTrigger trigger = (SimpleTrigger) TriggerBuilder.newTrigger()
+			.withIdentity("myTrigger", "group1").startAt(date)
+			.withSchedule(SimpleScheduleBuilder.simpleSchedule()
+					.withIntervalInSeconds(2).withRepeatCount(3))
+			.build();
+
+
+运行结果，执行3次后，Job停止：
+
+	Current excut is:2017-06-26 10:29:22
+	Current excut is:2017-06-26 10:29:26
+	Hello World!
+	Current excut is:2017-06-26 10:29:28
+	Hello World!
+	Current excut is:2017-06-26 10:29:30
+	Hello World!
+	Current excut is:2017-06-26 10:29:32
+	Hello World!

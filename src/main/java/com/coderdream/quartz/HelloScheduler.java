@@ -17,20 +17,13 @@ public class HelloScheduler {
 
 	public static void main(String[] args) throws SchedulerException {
 		// 创建一个JobDetail实例，将该实例与HelloJob Class绑定
-		JobDetail jobDetail = JobBuilder.newJob(HelloJob.class)
-				.withIdentity("myJob", "group1").build();
-
-		System.out.println("jobDetail's name:" + jobDetail.getKey().getName());
-		System.out.println("jobDetail's group:" + jobDetail.getKey().getGroup());
-		System.out
-				.println("jobDetail's jobClass:" + jobDetail.getJobClass().getName());
+		JobDetail jobDetail = JobBuilder.newJob(HelloJob.class).withIdentity("myJob", "group1")
+				.usingJobData("message", "hello myJob1").usingJobData("FloatJobValue", 3.14F).build();
 
 		// 创建一个Trigger实例，定义该Job立即执行，并且每个两秒钟重复一次，直到永远
-		Trigger trigger = TriggerBuilder.newTrigger()
-				.withIdentity("myTrigger", "group1").startNow()
-				.withSchedule(SimpleScheduleBuilder.simpleSchedule()
-						.withIntervalInSeconds(2).repeatForever())
-				.build();
+		Trigger trigger = TriggerBuilder.newTrigger().withIdentity("myTrigger", "group1")
+				.usingJobData("message", "hello myTrigger1").usingJobData("DoubleTriggerValue", 2.0D).startNow()
+				.withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(2).repeatForever()).build();
 		// 创建Scheduler实例
 		SchedulerFactory schedulerFactory = new StdSchedulerFactory();
 		Scheduler scheduler = schedulerFactory.getScheduler();

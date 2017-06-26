@@ -40,3 +40,21 @@ com.coderdream.quartz.HelloScheduler
 	Current excut is:2017-06-25 21:40:56
 	Hello World!
 
+## 2-3 浅谈JobExecutionContext&JobDataMap(上) (13:01) ##
+
+	Current excut is:2017-06-26 08:59:01
+	Current excut is:2017-06-26 08:59:01
+	My Job name and group are:myJob:group1
+	My Trigger name and group are:myTrigger:group1
+	JobMsg is:hello myJob1
+	JobFloatValue is:3.14
+	TriggerMsg is:hello myTrigger1
+	TriggerDoubleValue is:2.0
+	Current excut is:2017-06-26 08:59:03
+	My Job name and group are:myJob:group1
+	My Trigger name and group are:myTrigger:group1
+	JobMsg is:hello myJob1
+	JobFloatValue is:3.14
+	TriggerMsg is:hello myTrigger1
+	TriggerDoubleValue is:2.0
+

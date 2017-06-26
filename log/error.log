@@ -1,0 +1,135 @@
+2017-06-26 08:57:48,117 ERROR [DefaultQuartzScheduler_Worker-1] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:48,151 ERROR [DefaultQuartzScheduler_Worker-1] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:49,948 ERROR [DefaultQuartzScheduler_Worker-2] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:49,949 ERROR [DefaultQuartzScheduler_Worker-2] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:51,947 ERROR [DefaultQuartzScheduler_Worker-3] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:51,948 ERROR [DefaultQuartzScheduler_Worker-3] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:53,947 ERROR [DefaultQuartzScheduler_Worker-4] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:53,950 ERROR [DefaultQuartzScheduler_Worker-4] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:55,947 ERROR [DefaultQuartzScheduler_Worker-5] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:55,947 ERROR [DefaultQuartzScheduler_Worker-5] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:57,947 ERROR [DefaultQuartzScheduler_Worker-6] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:57,948 ERROR [DefaultQuartzScheduler_Worker-6] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:58:36,159 ERROR [DefaultQuartzScheduler_Worker-1] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:58:36,161 ERROR [DefaultQuartzScheduler_Worker-1] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Double.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:58:38,014 ERROR [DefaultQuartzScheduler_Worker-2] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:58:38,015 ERROR [DefaultQuartzScheduler_Worker-2] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Double.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:58:40,015 ERROR [DefaultQuartzScheduler_Worker-3] [org.quartz.core.JobRunShell.run(JobRunShell.java:211)]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:58:40,016 ERROR [DefaultQuartzScheduler_Worker-3] [org.quartz.core.ErrorLogger.schedulerError(QuartzScheduler.java:2401)]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Double.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more

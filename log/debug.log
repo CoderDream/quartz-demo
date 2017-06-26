@@ -46,4 +46,253 @@
  2017-06-25 21:40:56,836 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
  2017-06-25 21:40:56,837 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
  2017-06-25 21:40:56,837 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job group1.myJob
+ 2017-06-26 08:42:24,191 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 08:42:24,195 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 08:42:24,236 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 08:42:24,236 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 08:42:24,239 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 08:42:24,240 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 08:42:24,240 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 08:42:24,240 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 08:42:24,240 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 08:42:24,240 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 08:42:24,249 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:42:24,251 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:42:24,252 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:42:24,253 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job group1.myJob
+ 2017-06-26 08:42:25,846 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:42:25,846 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:42:25,846 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job group1.myJob
+ 2017-06-26 08:42:27,846 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:42:27,846 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:42:27,846 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:48,054 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 08:57:48,059 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 08:57:48,069 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 08:57:48,069 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 08:57:48,071 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 08:57:48,072 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 08:57:48,072 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 08:57:48,072 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 08:57:48,073 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 08:57:48,073 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 08:57:48,081 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:48,083 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:57:48,086 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:48,086 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:48,117 ERROR [DefaultQuartzScheduler_Worker-1]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:48,151 ERROR [DefaultQuartzScheduler_Worker-1]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:49,947 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:57:49,947 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:49,947 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:49,948 ERROR [DefaultQuartzScheduler_Worker-2]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:49,949 ERROR [DefaultQuartzScheduler_Worker-2]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:51,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:57:51,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:51,946 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:51,947 ERROR [DefaultQuartzScheduler_Worker-3]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:51,948 ERROR [DefaultQuartzScheduler_Worker-3]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:53,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:57:53,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:53,946 DEBUG [DefaultQuartzScheduler_Worker-4]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:53,947 ERROR [DefaultQuartzScheduler_Worker-4]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:53,950 ERROR [DefaultQuartzScheduler_Worker-4]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:55,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:57:55,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:55,946 DEBUG [DefaultQuartzScheduler_Worker-5]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:55,947 ERROR [DefaultQuartzScheduler_Worker-5]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:55,947 ERROR [DefaultQuartzScheduler_Worker-5]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:57:57,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:57:57,946 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:57:57,946 DEBUG [DefaultQuartzScheduler_Worker-6]: Calling execute on job group1.myJob
+ 2017-06-26 08:57:57,947 ERROR [DefaultQuartzScheduler_Worker-6]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:57:57,948 ERROR [DefaultQuartzScheduler_Worker-6]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Float.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Float.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getFloat(StringKeyDirtyFlagMap.java:300)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:29)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:58:36,126 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 08:58:36,130 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 08:58:36,140 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 08:58:36,140 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 08:58:36,142 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 08:58:36,143 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 08:58:36,143 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 08:58:36,143 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 08:58:36,143 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 08:58:36,144 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 08:58:36,152 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:58:36,154 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:58:36,157 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:58:36,158 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job group1.myJob
+ 2017-06-26 08:58:36,159 ERROR [DefaultQuartzScheduler_Worker-1]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:58:36,161 ERROR [DefaultQuartzScheduler_Worker-1]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Double.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:58:38,014 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:58:38,014 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:58:38,014 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job group1.myJob
+ 2017-06-26 08:58:38,014 ERROR [DefaultQuartzScheduler_Worker-2]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:58:38,015 ERROR [DefaultQuartzScheduler_Worker-2]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Double.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:58:40,014 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:58:40,014 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:58:40,014 DEBUG [DefaultQuartzScheduler_Worker-3]: Calling execute on job group1.myJob
+ 2017-06-26 08:58:40,015 ERROR [DefaultQuartzScheduler_Worker-3]: Job group1.myJob threw an unhandled Exception: 
+ java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+2017-06-26 08:58:40,016 ERROR [DefaultQuartzScheduler_Worker-3]: Job (group1.myJob threw an exception.
+ org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ClassCastException: Identified object is not a Double.]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: Identified object is not a Double.
+	at org.quartz.utils.StringKeyDirtyFlagMap.getDouble(StringKeyDirtyFlagMap.java:320)
+	at com.coderdream.quartz.HelloJob.execute(HelloJob.java:31)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2017-06-26 08:59:01,430 INFO  [main]: Using default implementation for ThreadExecutor
+ 2017-06-26 08:59:01,434 INFO  [main]: Job execution threads will use class loader of thread: main
+ 2017-06-26 08:59:01,444 INFO  [main]: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ 2017-06-26 08:59:01,445 INFO  [main]: Quartz Scheduler v.2.3.0 created.
+ 2017-06-26 08:59:01,447 INFO  [main]: RAMJobStore initialized.
+ 2017-06-26 08:59:01,448 INFO  [main]: Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ 2017-06-26 08:59:01,448 INFO  [main]: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ 2017-06-26 08:59:01,448 INFO  [main]: Quartz scheduler version: 2.3.0
+ 2017-06-26 08:59:01,449 INFO  [main]: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ 2017-06-26 08:59:01,449 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 0 triggers
+ 2017-06-26 08:59:01,457 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:59:01,458 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:59:01,463 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:59:01,463 DEBUG [DefaultQuartzScheduler_Worker-1]: Calling execute on job group1.myJob
+ 2017-06-26 08:59:03,317 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: Producing instance of Job 'group1.myJob', class=com.coderdream.quartz.HelloJob
+ 2017-06-26 08:59:03,317 DEBUG [DefaultQuartzScheduler_QuartzSchedulerThread]: batch acquisition of 1 triggers
+ 2017-06-26 08:59:03,317 DEBUG [DefaultQuartzScheduler_Worker-2]: Calling execute on job group1.myJob
  
